@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Linganathan G | Java Backend Developer</title>
+<title>Linganathan G | Full Stack Developer </title>
 
 <style>
 
@@ -27,18 +27,37 @@ margin:auto;
 padding:40px 20px;
 }
 
-header{
-text-align:center;
-padding:60px 20px;
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
 background:#020617;
+position:sticky;
+top:0;
 }
 
-header h1{
-font-size:40px;
+nav h2{
 color:#38bdf8;
 }
 
-header p{
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#e2e8f0;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:45px;
+color:#38bdf8;
+}
+
+.hero p{
 margin-top:10px;
 font-size:18px;
 color:#94a3b8;
@@ -47,21 +66,21 @@ color:#94a3b8;
 .btn{
 display:inline-block;
 margin-top:20px;
-padding:10px 25px;
+padding:12px 25px;
 background:#38bdf8;
 color:#020617;
+border-radius:6px;
 text-decoration:none;
-border-radius:5px;
 font-weight:bold;
 }
 
 section{
-margin-top:50px;
+margin-top:60px;
 }
 
 h2{
 color:#38bdf8;
-margin-bottom:15px;
+margin-bottom:20px;
 border-bottom:2px solid #38bdf8;
 display:inline-block;
 padding-bottom:5px;
@@ -71,12 +90,11 @@ padding-bottom:5px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:15px;
-margin-top:20px;
 }
 
-.skill-card{
+.card{
 background:#1e293b;
-padding:15px;
+padding:20px;
 border-radius:8px;
 }
 
@@ -94,9 +112,9 @@ margin-top:10px;
 
 .contact{
 text-align:center;
-padding:40px;
+padding:50px;
 background:#020617;
-margin-top:60px;
+margin-top:80px;
 }
 
 footer{
@@ -107,79 +125,80 @@ color:#94a3b8;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
+<nav>
+<h2>Linganathan G</h2>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
-<h1>Linganathan G</h1>
-<p>Java Backend Developer | Banking & Fintech</p>
-<p>Chennai, India | Immediate Joiner</p>
-
-<a class="btn" href="#">Download Resume</a>
-
-</header>
-
+<!-- <div class="hero">
+<h1>Full Stack Developer</h1>
+<p>3+ Years Experience | Banking & Fintech Applications</p>
+<!-- <a class="btn" href="#">Download Resume</a>
+</div> -->
 <div class="container">
-
-<section>
-
+<section id="about">
 <h2>About Me</h2>
-
 <p>
-Full Stack Developer with 3+ years of experience in banking and financial services.
-Specialized in building Loan Origination and Loan Management Systems using Java,
-Oracle PL/SQL, and REST APIs. Experienced in production support, system performance
-optimization, and enterprise banking integrations.
+Full Stack Developer with 3+ years of experience in banking and financial services. Specialized in building and supporting Loan Origination and Loan Management Systems using Java, Oracle PL/SQL, and REST APIs. Proven expertise in production support, performance optimization, and enterprise banking integrations. 
+Immediate joiner seeking Backend / Full Stack Developer opportunities in fintech and product-based companies.
+
 </p>
 
 </section>
 
-<section>
+<section id="skills">
 
 <h2>Technical Skills</h2>
 
 <div class="skills">
 
-<div class="skill-card">Core Java</div>
-<div class="skill-card">Spring Boot (Basic)</div>
-<div class="skill-card">JSP / Servlets</div>
-<div class="skill-card">REST APIs</div>
-<div class="skill-card">Oracle SQL</div>
-<div class="skill-card">PL/SQL</div>
-<div class="skill-card">Microservices (Basic)</div>
-<div class="skill-card">JBoss Server</div>
-<div class="skill-card">Jasper Reports</div>
-<div class="skill-card">JIRA</div>
-<div class="skill-card">SVN</div>
-<div class="skill-card">Banking LOS Domain</div>
+<div class="card">Java</div>
+<div class="card">JSP / Servlets</div>
+<div class="card">REST APIs</div>
+<div class="card">Oracle SQL</div>
+<div class="card">PL/SQL</div>
+<div class="card">JBoss Server</div>
+<div class="card">Jasper Reports</div>
+<div class="card">IReports</div>
+<div class="card">JIRA</div>
+<div class="card">ServiceDesk</div>
+<div class="card">Spira</div>
+<div class="card">Github</div>
+<div class="card">SVN</div>
 
 </div>
 
 </section>
 
-<section>
+<section id="experience">
 
 <h2>Professional Experience</h2>
 
 <div class="experience">
 
-<h3>Full Stack Developer / Analyst</h3>
+<h3>Software Developer</h3>
 <p><b>Ebix Technologies Pvt Ltd – Chennai</b></p>
 <p>Sep 2022 – Feb 2026</p>
 
-<p><b>Project:</b> Retail Loan Origination & Loan Management System</p>
-<p><b>Clients:</b> Bandhan Bank, CSB Bank, NRFSI</p>
-
+<h3>Project & Clients</h3>
+<p><b>Bandhan Bank, CSB Bank, NRFSI</b></p>
 <ul>
-<li>Developed backend modules using Java and Oracle PL/SQL</li>
+<li>Developed backend modules using Java and PL/SQL</li>
 <li>Designed REST APIs for banking integrations</li>
-<li>Automated loan lifecycle workflows</li>
-<li>Resolved production issues using root cause analysis</li>
-<li>Optimized SQL queries for performance improvements</li>
-<li>Deployed and monitored applications on JBoss servers</li>
-<li>Developed business reports using Jasper Reports</li>
+<li>Supported Loan Origination Systems</li>
+<li>Optimized database queries for performance</li>
+<li>Resolved production issues</li>
+<li>Deployed applications on JBoss servers</li>
 </ul>
 
 </div>
@@ -188,19 +207,13 @@ optimization, and enterprise banking integrations.
 
 <section>
 
-<h2>Onsite Experience</h2>
-
-<div class="experience">
-
+<h2>ONSITE EXPERIENCE</h2>
+<div class="card">
 <h3>Bandhan Bank HQ – Kolkata</h3>
-
-<p>Apr 2023 – May 2023</p>
-<p>Aug 2024 – Mar 2025</p>
-<p>Nov 2025 – Feb 2026</p>
-
+<p>Apr 2023 – May 2023 | Aug 2024 – Mar 2025 | Nov 2025 – Feb 2026</p>
 <ul>
+<li>Provided direct production support to banking business teams</li>
 <li>Stabilized Loan Origination and credit processing systems</li>
-<li>Provided production support to banking business teams</li>
 <li>Ensured smooth banking operations and system reliability</li>
 </ul>
 
@@ -212,30 +225,33 @@ optimization, and enterprise banking integrations.
 
 <h2>Certifications</h2>
 
+<div class="card">
+
 <ul>
-<li>Introduction to JIRA – Simplilearn</li>
-<li>Introduction to SQL – Simplilearn</li>
-<li>Introduction to Agile – Simplilearn</li>
-<li>SQL (Basic) – HackerRank</li>
+<li>SQL – Simplilearn</li>
+<li>JIRA – Simplilearn</li>
+<li>Agile – Simplilearn</li>
+<li>SQL – HackerRank</li>
 </ul>
+
+</div>
 
 </section>
 
 </div>
 
-<div class="contact">
+<div id="contact" class="contact">
 
 <h2>Contact</h2>
 
 <p>Email: glinganathanit@gmail.com</p>
-<p>Mobile: +91 82701 72029</p>
-<p>LinkedIn: linkedin.com/in/linganathan-g</p>
-
+<p>Phone: +91 82701 72029</p>
+<p>LinkedIn: www.linkedin.com/in/linganathan-g</p>
 </div>
 
 <footer>
 
-© 2026 Linganathan G | Java Backend Developer Portfolio
+© 2026 Linganathan G | Developer Portfolio
 
 </footer>
 
